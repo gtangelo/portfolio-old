@@ -1,0 +1,49 @@
+.project-banner-container {
+  height: 70vh;
+  width: 100%;
+  background-color: aqua;
+  margin: 10px 0px;
+  display: flex;
+  align-content: center;
+
+}
+
+.project-card-container {
+  margin-top: 70px;
+  width: 700px;
+  height: 300px;
+  padding: 30px 20px;
+  background-color: #FAFAFA;
+  transition: all 0.4s ease;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+}
+
+.left {
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) -5px 5px 7px;
+}
+
+.right {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 7px;
+}
+
+.project-labels-container {
+  margin: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-label {
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: gray;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: -2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: center;
+}
