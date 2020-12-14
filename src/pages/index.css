@@ -1,48 +1,97 @@
-.main-banner {
+#banner-section {
+  height: 90vh;
   width: 100%;
-  height: 75vh;
-  padding: 15vh 10vw;
-  background: rgb(170,241,255);
-  background: linear-gradient(90deg, rgba(170,241,255,1) 0%, rgba(74,74,210,1) 100%, rgba(2,0,36,1) 100%);
 }
 
-.main-heading {
-  font-size: 4rem;
-  margin-bottom: 25px;
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-.main-description {
-  font-size: 26px;
-  letter-spacing: 0.5px;
-}
-
-.arrow-container {
+.banner-logo {
   text-align: center;
-  position: absolute;
-  width: 80%;
-  bottom: 25vh; 
+  font-size: 70px;
+  margin-top: -60px;
+  margin-bottom: 60px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.banner-heading {
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+
+.banner-description {
+  font-size: 22px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.banner-arrow {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .arrow-down:hover {
   cursor: pointer;
-  font-size: 100px;
 }
 
-.center-container {
+
+.page-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: block;
+}
+
+.highlight-container {
+  margin-top: 30px;
+}
+
+.heading {
+  padding: 15px;
+  border-bottom: #222222 solid 1px;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.label-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 0px 15px;
+  justify-content: space-around;
 }
+
 
 .heading-section {
   width: 100%;
   height: 15vh;
   align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .side-line {
-  width: 75%; 
+  width: 100%; 
   text-align: center; 
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   line-height: 0.1em;
@@ -52,5 +101,10 @@
 .side-line span { 
   background:#fff; 
   padding:0px 20px;
-  font-size: 15px;
+  font-size: 30px;
+}
+
+#latest-section {
+  background-color: white;
+  padding-bottom: 50px;
 }

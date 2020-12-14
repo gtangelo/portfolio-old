@@ -7,7 +7,6 @@ import AboutPage from './pages/AboutPage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
 import BlogPage from './pages/BlogPage.js';
 import ResumePage from './pages/ResumePage.js';
-import { Container } from 'react-bootstrap';
 
 import './App.css'
 import Footer from './components/Footer.js';
@@ -15,19 +14,17 @@ import Footer from './components/Footer.js';
 function App() {
   return (
     <Router>
-      <Container>
-        <div className='App'>
-          <NavBar />
-          <Switch>
-            <Route exact path={routes.HOME} component={HomePage} />
-            <Route exact path={routes.ABOUT} component={AboutPage} />
-            <Route exact path={routes.RESUME} component={ResumePage} />
-            <Route exact path={routes.PROJECTS} component={ProjectsPage} />
-            <Route exact path={routes.BLOG} component={BlogPage} />
-          </Switch>
-          <Footer/>
-        </div>
-      </Container>
+      <div className='App'>
+        <NavBar />
+        <Switch>
+          <Route exact path={routes.HOME} component={HomePage} />
+          <Route exact path={routes.ABOUT} component={AboutPage} />
+          <Route exact path={routes.RESUME} component={ResumePage} />
+          <Route exact path={routes.PROJECTS} component={ProjectsPage} />
+          <Route exact path={routes.BLOG} component={BlogPage} />
+        </Switch>
+        <Footer/>
+      </div>
     </Router>
   );
 }

@@ -4,9 +4,9 @@
   background-color: #222222;
   color: #ffffff;
   padding: 0px 15px;
-  margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0px 15px;
 }
