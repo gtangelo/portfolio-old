@@ -51,11 +51,6 @@ const Navbar = () => {
                 <li>Resume</li>
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link to={routes.BLOG} className='nav-link' onClick={closeMenu}>
-                <li>Blog</li>
-              </Link>
-            </li>
           </ul>
         </header>
       </Container>

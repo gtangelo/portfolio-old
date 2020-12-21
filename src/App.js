@@ -5,7 +5,6 @@ import routes from './Routes';
 import HomePage from './pages/HomePage.js';
 import AboutPage from './pages/AboutPage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
-import BlogPage from './pages/BlogPage.js';
 import ResumePage from './pages/ResumePage.js';
 
 import './App.css'
@@ -21,7 +20,6 @@ function App() {
           <Route exact path={routes.ABOUT} component={AboutPage} />
           <Route exact path={routes.RESUME} component={ResumePage} />
           <Route exact path={routes.PROJECTS} component={ProjectsPage} />
-          <Route exact path={routes.BLOG} component={BlogPage} />
         </Switch>
         <Footer/>
       </div>
